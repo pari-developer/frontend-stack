@@ -1,14 +1,11 @@
-import { UpdateObject, InsertList } from './concepts/UpdateObject';
+import { Pagination } from './concepts/Pagination';
 import './App.css';
 
 function App() {
   return (
     <>
-      <div className='card'>
-      </div>
       <div>
-        <UpdateObject />
-        <InsertList />
+        <Pagination />
       </div>
     </>
   );

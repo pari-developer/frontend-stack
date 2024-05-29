@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.page-item.active { 
+  background-color: #888;
+  font-size: bolder;
+}
