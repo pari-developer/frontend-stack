@@ -1,5 +1,8 @@
-import {Form} from './concepts/Form';
-import { Pagination } from './concepts/Pagination';
+//components
+import { Pagination } from './components/Pagination';
+import { Form } from './components/Form';
+
+//styles
 import './App.css';
 
 function App() {
@@ -7,6 +10,7 @@ function App() {
     <>
       <div>
         <Form />
+        <Pagination/>
       </div>
     </>
   );

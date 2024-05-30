@@ -68,17 +68,6 @@ export const Form = () => {
     //   };
     // }
 
-    // const status = response.status;
-    // let errorMessage = translations['bulk-orders-creation-failed'];
-
-    // if (status === HttpStatusCodeEnum.Unauthorised) {
-    //   errorMessage = translations['bulk-orders-session-expired'];
-    // }
-
-    // if (status === HttpStatusCodeEnum.Conflict) {
-    //   errorMessage = translations['bulk-orders-conflict'];
-    // }
-
     // return {
     //   orderReference: '',
     //   errorMessage: errorMessage,
@@ -88,6 +77,7 @@ export const Form = () => {
 
   return (
     <div className='form-container' data-testid='root-div'>
+      <h4>Form Component</h4>
       <form className='flex-form' onSubmit={handleProcessForm}>
       {errors.fname && <div className="error">{errors.fname}</div>}
         <label htmlFor='fname'>FName</label>
