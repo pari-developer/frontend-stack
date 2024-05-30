@@ -45,3 +45,21 @@
   background-color: #888;
   font-size: bolder;
 }
+
+.form-container {
+  border : 1px solid black;
+  padding : 50px 80px;
+  border-radius: 5px;
+}
+
+.flex-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.error {
+  color :red;
+}
