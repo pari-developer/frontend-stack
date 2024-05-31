@@ -105,13 +105,14 @@ export const Form = () => {
           <label htmlFor='gender'>Gender</label>
           {gender.map((item) => {
             return (
-              <div key={item} onChange={handleFormElementChange}>
+              <div key={item}>
                 <label htmlFor={item}>{item}</label>
                 <input
                   type='radio'
                   name='gender'
                   value={item}
                   checked={formElements.gender === item}
+                  onChange={handleFormElementChange}
                 />
               </div>
             );
@@ -124,7 +125,7 @@ export const Form = () => {
           onChange={handleFormElementChange}
         >
           {['India', 'Poland'].map((item) => {
-            return <option value={item}>{item}</option>;
+            return <option key={item} value={item}>{item}</option>;
           })}
         </select>
         <input type='submit' />

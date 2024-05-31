@@ -54,7 +54,7 @@ export function Pagination() {
         <div>
           <select onChange={handleSelectChange}>
             {recordValues?.map((item) => {
-              return <option value={item}>{item}</option>;
+              return <option key={item} value={item}>{item}</option>;
             })}
           </select>
           {todos?.slice(start, endIndex).map((item) => {
@@ -68,6 +68,7 @@ export function Pagination() {
             return (
               <>
                 <button
+                  key={item}
                   className={` page-item ${item === pageIndex ? 'active' : ''}`}
                   onClick={() => handlePaginatedButtonClick(item)}
                 >
