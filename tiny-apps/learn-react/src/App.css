@@ -80,18 +80,18 @@ ol {
   margin: 5px;
   padding: 10px;
   background-color: yellow; /* Initial background color */
-  animation: pulse 1s infinite; 
+  animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
   0% {
-    transform: scaleX(1)
+    transform: scaleX(1);
   }
   50% {
-    transform: scale3d(1.05, 1.05, 1.05)
+    transform: scale3d(1.05, 1.05, 1.05);
   }
   to {
-    transform: scaleX(1)
+    transform: scaleX(1);
   }
 }
 
@@ -125,4 +125,18 @@ ol {
 
 .modal-content button {
   margin-top: 20px;
+}
+li {
+list-style-type: none;
+}
+
+.home-text {
+  transition: width 2s, height 2s, transform 2s;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
