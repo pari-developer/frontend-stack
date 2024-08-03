@@ -17,6 +17,18 @@ const Navigation = () => (
         <li>
           <Link to="/form">Form</Link>
         </li>
+        <li>
+          <Link to="/accordion">Accordion</Link>
+        </li>
+        <li>
+          <Link to="/ref">Ref</Link>
+        </li>
+        <li>
+          <Link to="/batching">Batching</Link>
+        </li>
+        <li>
+          <Link to="/ref">Ref</Link>
+        </li>
       </ul>
     </nav>
   );
@@ -24,8 +36,8 @@ const Navigation = () => (
 export const Layout = () => {
   return (
     <>
-      <Navigation />
       <Outlet />
+      <Navigation />
     </>
   );
 };

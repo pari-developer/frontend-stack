@@ -5,17 +5,16 @@ import { Form } from './components/Form';
 import { Tabs } from './components/Tabs';
 import { TicTacToe } from './components/TicTacToe';
 import { Layout } from './components/Layout';
+import { Accordion } from './components/Accordion';
+import { Counter } from './components/Ref';
+import { ReactBatching } from './components/ReactBatching';
+
 import { BrowserRouter } from 'react-router-dom';
 
 //styles
 import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
-import { createSlice } from '@reduxjs/toolkit';
-
-
-
-
 
 const routes = [
   {
@@ -23,9 +22,9 @@ const routes = [
     element: <Layout />,
     children: [
       {
-       path : '',
-       index : true,
-       element : <Home/>
+        path: '',
+        index: true,
+        element: <Home />,
       },
       {
         path: 'pagination',
@@ -40,6 +39,11 @@ const routes = [
         element: <TicTacToe />,
       },
       { path: 'form', element: <Form /> },
+      { path: 'accordion', element: <Accordion /> },
+      { path: 'ref', element: <Counter /> },
+      { path: 'batching', element: <ReactBatching /> },
+
+      
     ],
   },
 ];
@@ -65,12 +69,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-createSlice({
-  name : CountQueuingStrategy,
-  
-})

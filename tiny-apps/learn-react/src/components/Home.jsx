@@ -5,9 +5,11 @@ import '../App.css';
 
 export const Home = () => {
   return (
-    <>
-      <h4 className='home-text'>We are just getting started !</h4>
-      <Outlet />
-    </>
+    <div>
+       <h4 className='home-text'>We are just getting started !</h4>
+       <Outlet />
+     
+     
+    </div>
   );
 };
